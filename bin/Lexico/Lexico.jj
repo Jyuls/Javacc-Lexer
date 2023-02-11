@@ -1,96 +1,0 @@
-/**
- * JavaCC template file created by SF JavaCC plugin 1.5.28+ wizard for JavaCC 1.5.0+
-*/options{  STATIC = false;
-  BUILD_PARSER = false;}PARSER_BEGIN(Lexico)
-package Lexico;
-public class Lexico{}PARSER_END(Lexico)SKIP :{  " "| "\r"| "\t"| "\n"}
-// TOKENSTOKEN:
-{
-// PALABRAS RESERVADAS
-  < MAIN: "main" >{System.out.println("\nMAIN ->"+image);}
-| < OUT: "out" >{System.out.println("\nOUT ->"+image); }
-| < IN: "in" >{System.out.println("\nIN ->"+image); }
-| < PRINT: "print" >{System.out.println("\nPRINT ->"+image); }
-| < PRINTLN: "println" >{System.out.println("\nPRINTLN ->"+image); }
-| < SYSTEM: "system" >{System.out.println("\nSYSTEM ->"+image); }
-| < CLASS: "class" > {System.out.println("\nCLASS ->"+image);}
-| < PACKAGE: "package" > {System.out.println("\nPACKAGE ->"+image);}
-| < PUBLIC: "public" >{System.out.println("\nPUBLIC ->"+image);}
-| < PRIVATE: "private" >{System.out.println("\nPRIVATE ->"+image);}
-| < PROTECTED: "protected" >{System.out.println("\nPROTECTED ->"+image);}
-| < VOID: "void" >{System.out.println("\nVOID ->"+image);}
-| < STATIC: "static" >{System.out.println("\nSTATIC ->"+image);}
-| < RETURN: "return" >{System.out.println("\nRETURN ->"+image);}
-
-// TIPO DE DATO
-| < INT: "int" >{System.out.println("\nINT ->"+image);}
-| < DOUBLE: "double" >{System.out.println("\nDOUBLE ->"+image);}
-| < LONG: "long" >{System.out.println("\nLONG ->"+image);}
-| < FLOAT: "float" >{System.out.println("\nFLOAT ->"+image);}
-| < STRING: "string" >{System.out.println("\nSTRING ->"+image);}
-| < CHAR: "char" >{System.out.println("\nCHAR ->"+image); }
-| < BOOLEAN: "boolean" >{System.out.println("\nBOOLEAN ->"+image); }
-| < TRUE: "true" >{System.out.println("\nTRUE ->"+image); }
-| < FALSE: "false" >{System.out.println("\nFALSE ->"+image); }
-
-// SIMBOLOS
-| < LEFT_BRACE: "{" >{System.out.println("\nLEFT_BRACE ->"+image);}
-| < RIGHT_BRACE: "}" >{System.out.println("\nRIGHT_BRACE ->"+image);}
-| < LEFT_PARENTHESIS: "(" >{System.out.println("\nLEFT_PARENTHESIS ->"+image);}
-| < RIGHT_PARENTHESIS: ")" >{System.out.println("\nRIGHT_PARENTHESIS ->"+image);}
-| < LEFT_BRACKET: "[" >{System.out.println("\nLEFT_BRACKET ->"+image);}
-| < RIGHT_BRACKET: "]" >{System.out.println("\nRIGHT_BRACKET ->"+image);}
-| < SEMICOLON: ";" >{System.out.println("\nSEMICOLON ->"+image);}
-| < DOT: "." >{System.out.println("\nDOT ->"+image);}
-| < COMMA: "," >{System.out.println("\nCOMMA ->"+image);}
-
-
-// OPERADORES ARITMETCOS
-| < ADDITION: "+" >{System.out.println("\nADDITION ->"+image);}
-| < SUBTRACTION: "-" >{System.out.println("\nSUBTRACTION ->"+image);}
-| < MULTIPLICATION: "*" >{System.out.println("\nMULTIPLICATION ->"+image);}
-| < DIVISION: "/" >{System.out.println("\nDIVISION ->"+image);}
-| < MODULUS: "%" >{System.out.println("\nMODULUS ->"+image);}
-| < EQUAL: "=" >{System.out.println("\nEQUAL ->"+image);}| < SUBTRACTION_ASSIGNMENT: "-=" >{System.out.println("\nSUBTRACTION_ASSIGNMENT ->"+image);}
-| < ADDITION_ASSIGNMENT: "+=" >{System.out.println("\nADDITION_ASSIGNMENT ->"+image);}
-| < MULTIPLICATION_ASSIGNMENT: "*=" >{System.out.println("\nMULTIPLICATION_ASSIGNMENT ->"+image);}
-| < DIVISION_ASSIGNMENT: "/=" >{System.out.println("\nDIVISION_ASSIGNMENT ->"+image);}
-| < MODULUS_ASSIGNMENT: "%=" >{System.out.println("\nMODULUS_ASSIGNMENT ->"+image);}
-| < INCREMENT: "++" >{System.out.println("\nINCREMENT ->"+image);}
-| < DECREMENT: "--" >{System.out.println("\nDECREMENT ->"+image);}
-
-// OPERADORES LOGICOS
-| < AND: "&&" >{System.out.println("\nAND ->"+image);}
-| < OR: "||" >{System.out.println("\nOR ->"+image);}
-
-// OPERADORES RELACIONALES
-| < EQUAL_TO: "==" >{System.out.println("\nEQUAL_TO ->"+image);}
-| < NOT_EQUAL_TO: "!=" >{System.out.println("\nNOT_EQUAL_TO ->"+image);}
-| < GREATER_THAN: ">" >{System.out.println("\nGREATER_THAN ->"+image);}
-| < GREATER_THAN_EQUAL_TO: ">=" >{System.out.println("\nGREATER_THAN_EQUAL_TO ->"+image);}
-| < LESS_THAN: "<" >{System.out.println("\nLESS_THAN ->"+image);}
-| < LESS_THAN_EQUAL_TO: "<=" >{System.out.println("\nLESS_THAN_EQUAL_TO ->"+image);}
-	
-// ESTRUCTURAS LOGICAS
-| < IF: "if" >{System.out.println("\nIF ->"+image);}
-| < ELSE: "else" >{System.out.println("\nELSE ->"+image);}
-
-| < WHILE: "while" >{System.out.println("\nWHILE ->"+image);}
-| < DO: "do" >{System.out.println("\nDO ->"+image);}
-
-| < SWITCH: "switch" >{System.out.println("\nSWITCH ->"+image);}
-| < CASE: "case" >{System.out.println("\nCASE ->"+image);}
-| < DEFOULT: "defoult" >{System.out.println("\nDEFOULT ->"+image);}
-| < BREAK: "break" >{System.out.println("\nBREAK ->"+image);}
-
-| < FOR: "for" >{System.out.println("\nFOR ->"+image);}
-// IDENTIFIER	
-| < IDENTIFIER: (["a"-"z","A"-"Z"])(["a"-"z","A"-"Z"]|["0"-"9"]) *>{System.out.println("\nIDENTIFIER ->"+image);}
-
-// LETTERS
-| < CHAIN: "\"" (~["\""])* "\"">{System.out.println("\nCHAIN ->"+image);}
-
-// NUMBERS
-| < NUMBER: (["0"-"9"])+ >{System.out.println("\nNUMBER ->"+image);}
-
-}
